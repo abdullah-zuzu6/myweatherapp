@@ -1,0 +1,279 @@
+
+/* Global reset for padding and margins */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #282c34;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  text-align: center;
+  margin: 0;
+}
+
+/* Main box for centering form input */
+#mainbox {
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+  width: 80%;
+  max-width: 400px;
+  margin-bottom: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #61dafb;
+  color: #282c34;
+  font-size: 1em;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #21a1f1;
+}
+
+/* Container for weather data */
+#container {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #333;
+  border-radius: 10px;
+  padding: 20px;
+ 
+}
+
+#fbox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #555;
+}
+
+h2, h3, p {
+  margin: 5px 0;
+}
+
+/* Weather data display */
+.Box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+#Text {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+#info {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+#info1 {
+  width: 60px;
+  height: 60px;
+}
+
+#text5, #text6, #text8 {
+  margin: 5px 0px;
+}
+
+/* Responsive Design */
+
+/* Mobile screens */
+@media (max-width: 480px) {
+  #container {
+    padding: 10px;
+    width: 90%;
+  }
+
+  #fbox, .Box {
+    display: block;
+    text-align: center;
+  }
+
+  h2, h3, p {
+    font-size: 1em;
+  }
+
+  #info {
+    font-size: 1.5em;
+  }
+}
+
+/* Tablets and small desktops */
+@media (min-width: 481px) and (max-width: 768px) {
+  #container {
+    padding: 20px;
+    width: 100%;
+  }
+
+  #fbox, .Box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  h2, h3, p {
+    font-size: 1.2em;
+  }
+
+  #info {
+    font-size: 2em;
+  }
+}
+
+
+/* App.css */
+
+/* Basic reset for padding and margins */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #282c34;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#mainbox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  padding: 10px;
+  margin-right: 10px;
+  border-radius: 5px;
+  border: none;
+  width: 200px;
+  font-size: 16px;
+}
+
+button {
+  padding: 10px 15px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  background-color: #61dafb;
+  color: #282c34;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+#fbox {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  padding: 10px;
+  background-color: #444;
+}
+
+.Box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 500px;
+  padding: 10px;
+  margin-top: 10px;
+  background-color: #333;
+  border-radius: 8px;
+}
+
+#info, #Text, #info1, #text5, #text6, #text8 {
+  margin: 5px ;
+}
+
+#info1 {
+  width: 50px;
+  height: 50px;
+}
+
+p {
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+#Text {
+  font-size: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  /* Adjust layout for tablets */
+  h1 {
+    font-size: 1.8rem;
+  }
+  #fbox {
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+  }
+  .Box {
+    width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Adjust layout for mobile devices */
+  h1 {
+    font-size: 1.6rem;
+  }
+  input[type="text"] {
+    width: 150px;
+    font-size: 14px;
+  }
+  button {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+  #info1 {
+    width: 40px;
+    height: 40px;
+  }
+  p {
+    font-size: 1rem;
+  }
+}
